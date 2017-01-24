@@ -324,7 +324,7 @@ module.exports = (function () {
      * @return {[type]}              [description]
      */
      
-     registerConnection: function (connection, collections, cb) {
+     registerDatastore: function (connection, collections, cb) {
 
       if (!connection.identity) return cb(Errors.IdentityMissing);
       if (connections[connection.identity]) return cb(Errors.IdentityDuplicate);
